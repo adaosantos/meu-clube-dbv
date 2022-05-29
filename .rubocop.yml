@@ -36,12 +36,12 @@ Metrics/ParameterLists:
 Metrics/MethodLength:
   Description: 'Avoid methods longer than 5 lines of code.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#short-methods'
-  Max: 5
+  Max: 15
   Enabled: true
 
 Metrics/BlockLength:
   CountComments: false
-  Max: 5
+  Max: 15
   IgnoredMethods:
     - context
     - describe
@@ -52,6 +52,10 @@ Metrics/BlockLength:
     - draw
     - configure
     - group
+
+Metrics/AbcSize:
+  Enabled: false
+
 
 # Style Cops
 
