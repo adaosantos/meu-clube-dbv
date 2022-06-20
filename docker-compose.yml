@@ -1,5 +1,9 @@
 version: "3.9"
 services:
+  graphql-playground:
+    image: djadao/graphql-playground-container:latest
+    environment:
+      GRAPHQL_ENPOINT: http://localhost:3000/api/v1/graphql
   postgres:
     image: postgres:14.3-alpine
     environment:
